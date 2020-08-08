@@ -95,7 +95,7 @@ class Keypad extends Component {
           >
             {this.props.calKeys[9]}
           </button>
-          <button onClick={() => this.props.onKey(".")} className="btn">
+          <button onClick={() => this.props.addDot()} className="btn">
             .
           </button>
           <button

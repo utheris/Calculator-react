@@ -15,7 +15,7 @@ class Calculator extends Component {
     let dValue = this.state.displayValue;
     let toDisplayValue = "";
 
-    if (dValue == 0) {
+    if (dValue === 0) {
       toDisplayValue = val;
     } else {
       if (this.state.signFlag) {
@@ -62,6 +62,15 @@ class Calculator extends Component {
       signFlag: true,
     });
   };
+  handleDot = () => {
+    const { displayValue } = this.state;
+    if (!/\./.test(displayValue)) {
+      let ns = displayValue + ".";
+      this.setState({
+        displayValue: ns,
+      });
+    }
+  };
 
   handleEqualsKey = () => {
     let result = 0;
@@ -103,6 +112,7 @@ class Calculator extends Component {
           onCKey={this.handleCKey}
           onSignKey={this.handleSignKey}
           onEqualsKey={this.handleEqualsKey}
+          addDot={this.handleDot}
         />
       </div>
     );
