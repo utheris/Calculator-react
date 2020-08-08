@@ -21,7 +21,7 @@ class Keypad extends Component {
         </div>
         <div className="keypad__row">
           <button
-            onClick={() => this.props.onKey(this.calKeys[8])}
+            onClick={() => this.props.onKey(this.props.calKeys[8])}
             className="btn"
           >
             {this.props.calKeys[8]}
