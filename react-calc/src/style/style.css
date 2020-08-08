@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  font-family: inherit;
+}
+
+/* Zmienne */
+:root {
+  --color-white: #fff;
+  --color-number: #a697a3;
+  --color-operation: #026873;
+  --color-darkblue: #012840;
+  --color-hover: #034c8c;
+}
+.app {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  height: 80vh;
+  width: 25%;
+  box-shadow: 0 2rem 4rem var(--color-darkblue);
+  background-color: var(--color-darkblue);
+}
+
+/* Screen styles */
+.screen {
+  height: 25vh;
+  width: 100%;
+  padding: 0 2rem;
+  overflow: hidden;
+  white-space: no-wrap;
+  color: var(--color-white);
+  background-color: var(--color-darkblue);
+}
+.result-screen {
+  height: 20vh;
+  font-size: 8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/* Keypad styles */
+.keypad {
+  height: 55vh;
+  width: 100%;
+}
+.keypad__row {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+/* Buttons */
+.btn {
+  width: 25%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: inherit;
+  background-color: var(--color-white);
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+.btn:hover {
+  color: var(--color-white);
+  background-color: var(--color-hover);
+}
+.btn:active {
+  transform: scale(0.95);
+}
+.btn--large {
+  width: 50%;
+  color: var(--color-white);
+  background-color: var(--color-darkblue);
+  transition: all 0.2s;
+}
+.btn--large:hover {
+  background-color: var(--color-hover);
+  color: var(--color-white);
+}
