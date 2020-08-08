@@ -11,6 +11,9 @@ html {
 }
 body {
   font-family: inherit;
+  background-image: url(https://cdn.pixabay.com/photo/2015/05/08/05/09/mathematics-757566_960_720.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Zmienne */

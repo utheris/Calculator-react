@@ -84,7 +84,7 @@ class Calculator extends Component {
           parseFloat(this.state.memory) / parseFloat(this.state.displayValue);
         break;
       case "%":
-        result = parseFloat(this.displayValue) / 100;
+        result = parseFloat(this.state.displayValue) / 100;
         break;
       default:
         break;
