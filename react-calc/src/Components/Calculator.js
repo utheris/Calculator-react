@@ -82,7 +82,7 @@ class Calculator extends Component {
 
         break;
       case "%":
-        result = parseFloat(this.state.displayValue) / 100;
+        result = (parseFloat(this.state.displayValue) / 100).toFixed(6);
         break;
       default:
         break;
