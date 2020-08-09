@@ -22,8 +22,15 @@ Prosty kalkulator napisany w React.js przy użyciu klas. Pozwala na wykonywanie 
 
 4. npm start - żeby zaczął działać
 
+#### Użyte technologie
+
+- React.js
+- ECS6
+- Webpack
+- CSS3
+
 **ToDo**
 
-1. Stworzyć komponent odpowiedzialny za przycisk
-2. Stworzyć komponent odpowiedzialny za rząd przycisków
+1. Przerobić przyciski na komponenty
+2. Dodać bardziej zaawansowane funkcje - logarytmy, pierwiastkowanie etc.
 3. Napisać readme po angielsku
