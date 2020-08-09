@@ -67,7 +67,7 @@ class Calculator extends Component {
       case "*":
         result = (
           parseFloat(this.state.memory) * parseFloat(this.state.displayValue)
-        ).toFixed(5);
+        ).toFixed(3);
         break;
       case "/":
         if (this.state.displayValue === 0) {
@@ -78,11 +78,11 @@ class Calculator extends Component {
         } else
           result = (
             parseFloat(this.state.memory) / parseFloat(this.state.displayValue)
-          ).toFixed(5);
+          ).toFixed(3);
 
         break;
       case "%":
-        result = parseFloat(this.state.displayValue) / 100;
+        result = (parseFloat(this.state.displayValue) / 100).toFixed(2);
         break;
       default:
         break;
