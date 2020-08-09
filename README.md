@@ -33,4 +33,5 @@ Prosty kalkulator napisany w React.js przy użyciu klas. Pozwala na wykonywanie 
 
 1. Przerobić przyciski na komponenty
 2. Dodać bardziej zaawansowane funkcje - logarytmy, pierwiastkowanie etc.
-3. Napisać readme po angielsku
+3. Poprawić zabezpieczenie przed zbyt dużą ilością liczb po przecinku.
+4. Napisać readme po angielsku
